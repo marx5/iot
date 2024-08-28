@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang=en>
+    <!--HEAD-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1">
+        <title>Dashboard | Smart Home</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="/js/chart.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js">
+ </script>
+
+    </head>
+    <!--END HEAD-->
+
+    <!--BODY-->
+
+    <body>
+        <!-- Navigation bar start-->
+        <div class="navbar">
+            <ul class="logo-container">
+                <a href="/index.html">
+                    <img src="/image/logo.png" class="logo" alt="Smart Home">
+                </a>
+            </ul>
+            <ul>
+                <li><a href="/index.html">Dashboard</a></li>
+                <li><a href="/navigation/datasensor.html">Data sensor</a></li>
+                <li><a href="/navigation/actionhistory.html">Action
+                        history</a></li>
+            </ul>
+            <a href="/navigation/profile.html">
+                <img src="/image/profile.png" class="profile" alt="Profile">
+            </a>
+        </div>
+        <!--Navigation bar end-->
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <div class="real-data">
+                <div class="box temparature">
+                    <h3>Temparature</h3>
+                    <h2>30C°</h2>
+                </div>
+                <div class="box humidity">
+                    <h3>Humidity</h3>
+                    <h2>30%</h2>
+                </div>
+                <div class="box light">
+                    <h3>Light</h3>
+                    <h2>200 Lux</h2>
+                </div>
+            </div>
+        </div>
+        <h1>Chart</h1>
+        <div class="main-container">
+            <div class="chart">
+                <canvas id="plots" style="width:100%;max-width:700px"></canvas>
+                <script src="Chart.js"></script>
+            </div>
+            <div class="control">
+                <h2>Control</h2>
+                <div class="list fcontrol"><h3>Fan</h3>
+                    <div class="control-panel">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleFan">
+                            <span class="slider round"></span>
+                        </label>
+                        <img id="fanImage" src="/image/fanoff.png"
+                            alt="Off Image">
+                    </div>
+                </div>
+                <div class="list acontrol"><h3>Air-conditioner</h3>
+                    <div class="control-panel">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleAir">
+                            <span class="slider round"></span>
+                        </label>
+                        <img id="airImage" src="/image/airoff.png"
+                            alt="Off Image">
+                    </div>
+                </div>
+                <div class="list lcontrol"><h3>Light</h3>
+                    <div class="control-panel">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleLight">
+                            <span class="slider round"></span>
+                        </label>
+                        <img id="lightImage" src="/image/lightoff.png"
+                            alt="Off Image">
+                    </div>
+                </div>
+                <script>
+                    document.getElementById('toggleFan').addEventListener('change', function() {
+                        var fanImage = document.getElementById('fanImage');
+    
+                        if (this.checked) {
+                            fanImage.src = '/image/fanon.gif';
+                        } else {
+                            fanImage.src = '/image/fanoff.png';
+                        }
+                    });
+                    document.getElementById('toggleAir').addEventListener('change', function() {
+                        var airIamge = document.getElementById('airImage');
+    
+                        if (this.checked) {
+                            airImage.src = '/image/airon.gif';
+                        } else {
+                            airImage.src = '/image/airoff.png';
+                        }
+                    });
+                    document.getElementById('toggleLight').addEventListener('change', function() {
+                        var lightIamge = document.getElementById('lightImage');
+    
+                        if (this.checked) {
+                            lightImage.src = '/image/lighton.png';
+                        } else {
+                            lightImage.src = '/image/lightoff.png';
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+    <!--END BODY-->
+
+    <!--FOOTER-->
+    <footer>
+
+    </footer>
+    <!--END FOOTER-->
+
+</html>

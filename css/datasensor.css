@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    appearance: none;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.9rem;
+    user-select: none;
+    background-color:#92e9da ;
+
+}
+.navbar{
+    justify-content: space-between;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: bisque;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+}
+
+.navbar ul li{
+    padding: 20px;
+    cursor: pointer;
+    float: left;
+}
+.navbar ul li:hover{
+    color: #f97676;
+    background-color: #92e9da;
+}
+.profile{
+    margin-left: auto;
+    justify-content: end;
+    width: 30px;
+    height: 30px;
+}
+
+.main{
+    margin: 130px auto 0;
+    height: 100%;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+}
+h1{
+    margin-left: 10px;
+}
+
+table {
+  width: 100%; /* Điều chỉnh chiều rộng bảng nếu cần */
+  border-collapse: collapse; /* Gộp các đường viền lại */
+  margin-top: 20px; /* Khoảng cách từ bảng đến phần tử phía trên */
+}
+
+th, td {
+  padding: 10px; /* Khoảng cách giữa nội dung và đường viền */
+  text-align: left; /* Căn trái nội dung trong ô */
+  border: 1px solid #ddd; /* Đường viền cho các ô */
+}
+
+th {
+  background-color: #f2f2f2; /* Màu nền cho ô tiêu đề */
+  font-weight: bold; /* In đậm chữ trong ô tiêu đề */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Màu nền xen kẽ cho các hàng */
+}
