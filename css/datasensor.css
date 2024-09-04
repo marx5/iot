@@ -17,15 +17,17 @@ body{
 
 }
 .navbar{
+    margin: 0 auto;
     justify-content: space-between;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%;
+    width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100px;
     background-color: bisque;
+}
+.ds{
+    font-size: 25px;
 }
 .logo{
     width: 150px;
@@ -49,9 +51,10 @@ body{
 }
 
 .main{
-    margin: 130px auto 0;
+    padding: 10px;
+    margin: 20px auto 0;
     height: 100%;
-    width: 700px;
+    width: 1000px;
     background-color: white;
     border-radius: 10px;
 }

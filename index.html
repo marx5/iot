@@ -8,10 +8,13 @@
             content="width=device-width, initial-scale=1">
         <title>Dashboard | Smart Home</title>
         <link rel="stylesheet" href="css/index.css">
-        <script src="/js/chart.js"></script>
         <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js">
- </script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+            integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/js/chart.js"></script>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     </head>
     <!--END HEAD-->
@@ -27,7 +30,7 @@
                 </a>
             </ul>
             <ul>
-                <li><a href="/index.html">Dashboard</a></li>
+                <li class="dh"><a href="/index.html">Dashboard</a></li>
                 <li><a href="/navigation/datasensor.html">Data sensor</a></li>
                 <li><a href="/navigation/actionhistory.html">Action
                         history</a></li>
@@ -37,49 +40,79 @@
             </a>
         </div>
         <!--Navigation bar end-->
+
+        <!--Box data-->
         <div class="dashboard">
-            <h1>Dashboard</h1>
             <div class="real-data">
-                <div class="box temparature">
-                    <h3>Temparature</h3>
-                    <h2>30C°</h2>
+                <h1 class="fname">Dashboard</h1>
+                <div id="temperatureColor" class="box temperature">
+                    <div class="sname">
+                        <span class="material-symbols-outlined">
+                            device_thermostat
+                        </span>
+                        <h3 class="fname">Temperature</h3>
+                    </div>
+                    <div class="st">
+                        <h2 id="temperatureValue"></h2>
+                        <h2 class="donvi">℃</h2>
+                    </div>
                 </div>
-                <div class="box humidity">
-                    <h3>Humidity</h3>
-                    <h2>30%</h2>
+                <div id="humidityColor" class="box humidity">
+                    <div class="sname">
+                        <span class="material-symbols-outlined">
+                            humidity_percentage
+                        </span>
+                        <h3 class="fname">Humidity</h3>
+                    </div>
+                    <div class="st">
+                        <h2 id="humidityValue"></h2>
+                        <h2 class="donvi"> %</h2>
+                    </div>
                 </div>
-                <div class="box light">
-                    <h3>Light</h3>
-                    <h2>200 Lux</h2>
+                <div id="lightColor" class="box light">
+                    <div class="sname">
+                        <span class="material-symbols-outlined">
+                            light_mode
+                        </span>
+                        <h3 class="fname">Light</h3>
+                    </div>
+                    <div class="st">
+                        <h2 id="lightValue"></h2>
+                        <h2 class="donvi">Lux</h2>
+                    </div>
                 </div>
             </div>
         </div>
-        <h1>Chart</h1>
+        <!--End Box Data-->
+
+        <!--Main Container-->
         <div class="main-container">
+            <h1 class="fname">Chart</h1>
+            <!--Chart-->
             <div class="chart">
-                <canvas id="plots" style="width:100%;max-width:700px"></canvas>
-                <script src="Chart.js"></script>
+                <canvas id="myChart" width="400" height="300"></canvas>
             </div>
+            <!--End chart-->
+
+            <!--Control-->
             <div class="control">
-                <h2>Control</h2>
+                <h1 class="fname">Control</h1>
                 <div class="list fcontrol"><h3>Fan</h3>
                     <div class="control-panel">
                         <label class="switch">
                             <input type="checkbox" id="toggleFan">
                             <span class="slider round"></span>
                         </label>
-                        <img id="fanImage" src="/image/fanoff.png"
-                            alt="Off Image">
+                        <img id="fanImage" src="/image/fanoff.png">
                     </div>
                 </div>
-                <div class="list acontrol"><h3>Air-conditioner</h3>
+                <div class=" list acontrol"><h3>Air-conditioner</h3>
                     <div class="control-panel">
                         <label class="switch">
                             <input type="checkbox" id="toggleAir">
                             <span class="slider round"></span>
                         </label>
-                        <img id="airImage" src="/image/airoff.png"
-                            alt="Off Image">
+                        <img id="airImage" src="/image/airoff.png">
                     </div>
                 </div>
                 <div class="list lcontrol"><h3>Light</h3>
@@ -88,41 +121,15 @@
                             <input type="checkbox" id="toggleLight">
                             <span class="slider round"></span>
                         </label>
-                        <img id="lightImage" src="/image/lightoff.png"
-                            alt="Off Image">
+                        <img id="lightImage" src="/image/lightoff.png">
                     </div>
                 </div>
-                <script>
-                    document.getElementById('toggleFan').addEventListener('change', function() {
-                        var fanImage = document.getElementById('fanImage');
-    
-                        if (this.checked) {
-                            fanImage.src = '/image/fanon.gif';
-                        } else {
-                            fanImage.src = '/image/fanoff.png';
-                        }
-                    });
-                    document.getElementById('toggleAir').addEventListener('change', function() {
-                        var airIamge = document.getElementById('airImage');
-    
-                        if (this.checked) {
-                            airImage.src = '/image/airon.gif';
-                        } else {
-                            airImage.src = '/image/airoff.png';
-                        }
-                    });
-                    document.getElementById('toggleLight').addEventListener('change', function() {
-                        var lightIamge = document.getElementById('lightImage');
-    
-                        if (this.checked) {
-                            lightImage.src = '/image/lighton.png';
-                        } else {
-                            lightImage.src = '/image/lightoff.png';
-                        }
-                    });
-                </script>
             </div>
+            <!--End Control-->
         </div>
+        <!--End Main Container-->
+        <script src="/js/fetchreal.js"></script>
+        <script src="/js/toggle.js"> </script>
     </body>
     <!--END BODY-->
 

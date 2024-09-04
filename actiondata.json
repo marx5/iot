@@ -1,283 +1,200 @@
-
 [
-    {
-        "ID": 1,
-        "Fan": "on",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T08:30:00"
-    },
-    {
-        "ID": 2,
-        "Fan": "off",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T08:35:00"
-    },
-    {
-        "ID": 3,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T08:40:00"
-    },
-    {
-        "ID": 4,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T08:45:00"
-    },
-    {
-        "ID": 5,
-        "Fan": "on",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T08:50:00"
-    },
-    {
-        "ID": 6,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T08:55:00"
-    },
-    {
-        "ID": 7,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T09:00:00"
-    },
-    {
-        "ID": 8,
-        "Fan": "on",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T09:05:00"
-    },
-    {
-        "ID": 9,
-        "Fan": "off",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T09:10:00"
-    },
-    {
-        "ID": 10,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T09:15:00"
-    },
-    {
-        "ID": 11,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T09:20:00"
-    },
-    {
-        "ID": 12,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T09:25:00"
-    },
-    {
-        "ID": 13,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T09:30:00"
-    },
-    {
-        "ID": 14,
-        "Fan": "on",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T09:35:00"
-    },
-    {
-        "ID": 15,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T09:40:00"
-    },
-    {
-        "ID": 16,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T09:45:00"
-    },
-    {
-        "ID": 17,
-        "Fan": "on",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T09:50:00"
-    },
-    {
-        "ID": 18,
-        "Fan": "off",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T09:55:00"
-    },
-    {
-        "ID": 19,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T10:00:00"
-    },
-    {
-        "ID": 20,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T10:05:00"
-    },
-    {
-        "ID": 21,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T10:10:00"
-    },
-    {
-        "ID": 22,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T10:15:00"
-    },
-    {
-        "ID": 23,
-        "Fan": "on",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T10:20:00"
-    },
-    {
-        "ID": 24,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T10:25:00"
-    },
-    {
-        "ID": 25,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T10:30:00"
-    },
-    {
-        "ID": 26,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T10:35:00"
-    },
-    {
-        "ID": 27,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T10:40:00"
-    },
-    {
-        "ID": 28,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T10:45:00"
-    },
-    {
-        "ID": 29,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T10:50:00"
-    },
-    {
-        "ID": 30,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T10:55:00"
-    },
-    {
-        "ID": 31,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T11:00:00"
-    },
-    {
-        "ID": 32,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T11:05:00"
-    },
-    {
-        "ID": 33,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T11:10:00"
-    },
-    {
-        "ID": 34,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T11:15:00"
-    },
-    {
-        "ID": 35,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T11:20:00"
-    },
-    {
-        "ID": 36,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "off",
-        "Time": "2024-08-28T11:25:00"
-    },
-    {
-        "ID": 37,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "on",
-        "Time": "2024-08-28T11:30:00"
-    },
-    {
-        "ID": 38,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T11:35:00"
-    },
-    {
-        "ID": 39,
-        "Fan": "off",
-        "Airconditional": "off",
-        "Light": "off",
-        "Time": "2024-08-28T11:40:00"
-    },
-    {
-        "ID": 40,
-        "Fan": "on",
-        "Airconditional": "on",
-        "Light": "on",
-        "Time": "2024-08-28T11:45:00"
-    }
+  {
+    "ID": 1,
+    "Device": "Fan",
+    "Action": "on",
+    "Time": "2024-09-02 19:07:00" 
+  },
+  {
+    "ID": 2,
+    "Device": "Air-conditioner",
+    "Action": "off",
+    "Time": "2024-09-02 19:08:00" 
+  },
+  {
+    "ID": 3,
+    "Device": "Light",
+    "Action": "on",
+    "Time": "2024-09-02 19:09:00" 
+  },
+  {
+    "ID": 4,
+    "Device": "Fan",
+    "Action": "off",
+    "Time": "2024-09-02 19:10:00" 
+  },
+  {
+    "ID": 5,
+    "Device": "Air-conditioner",
+    "Action": "on",
+    "Time": "2024-09-02 19:11:00" 
+  },
+  {
+    "ID": 6,
+    "Device": "Light",
+    "Action": "off",
+    "Time": "2024-09-02 19:12:00" 
+  },
+  {
+    "ID": 7,
+    "Device": "Fan",
+    "Action": "on",
+    "Time": "2024-09-02 19:13:00" 
+  },
+  {
+    "ID": 8,
+    "Device": "Air-conditioner",
+    "Action": "off",
+    "Time": "2024-09-02 19:14:00" 
+  },
+  {
+    "ID": 9,
+    "Device": "Light",
+    "Action": "on",
+    "Time": "2024-09-02 19:15:00" 
+  },
+  {
+    "ID": 10,
+    "Device": "Fan",
+    "Action": "off",
+    "Time": "2024-09-02 19:16:00" 
+  },
+  {
+    "ID": 11,
+    "Device": "Air-conditioner",
+    "Action": "on",
+    "Time": "2024-09-02 19:17:00" 
+  },
+  {
+    "ID": 12,
+    "Device": "Light",
+    "Action": "off",
+    "Time": "2024-09-02 19:18:00" 
+  },
+  {
+    "ID": 13,
+    "Device": "Fan",
+    "Action": "on",
+    "Time": "2024-09-02 19:19:00" 
+  },
+  {
+    "ID": 14,
+    "Device": "Air-conditioner",
+    "Action": "off",
+    "Time": "2024-09-02 19:20:00" 
+  },
+  {
+    "ID": 15,
+    "Device": "Light",
+    "Action": "on",
+    "Time": "2024-09-02 19:21:00" 
+  },
+  {
+    "ID": 16,
+    "Device": "Fan",
+    "Action": "off",
+    "Time": "2024-09-02 19:22:00" 
+  },
+  {
+    "ID": 17,
+    "Device": "Air-conditioner",
+    "Action": "on",
+    "Time": "2024-09-02 19:23:00" 
+  },
+  {
+    "ID": 18,
+    "Device": "Light",
+    "Action": "off",
+    "Time": "2024-09-02 19:24:00" 
+  },
+  {
+    "ID": 19,
+    "Device": "Fan",
+    "Action": "on",
+    "Time": "2024-09-02 19:25:00" 
+  },
+  {
+    "ID": 20,
+    "Device": "Air-conditioner",
+    "Action": "off",
+    "Time": "2024-09-02 19:26:00" 
+  },
+  {
+    "ID": 21,
+    "Device": "Light",
+    "Action": "on",
+    "Time": "2024-09-02 19:27:00" 
+  },
+  {
+    "ID": 22,
+    "Device": "Fan",
+    "Action": "off",
+    "Time": "2024-09-02 19:28:00" 
+  },
+  {
+    "ID": 23,
+    "Device": "Air-conditioner",
+    "Action": "on",
+    "Time": "2024-09-02 19:29:00" 
+  },
+  {
+    "ID": 24,
+    "Device": "Light",
+    "Action": "off",
+    "Time": "2024-09-02 19:30:00" 
+  },
+  {
+    "ID": 25,
+    "Device": "Fan",
+    "Action": "on",
+    "Time": "2024-09-02 19:31:00" 
+  },
+  {
+    "ID": 26,
+    "Device": "Air-conditioner",
+    "Action": "off",
+    "Time": "2024-09-02 19:32:00" 
+  },
+  {
+    "ID": 27,
+    "Device": "Light",
+    "Action": "on",
+    "Time": "2024-09-02 19:33:00" 
+  },
+  {
+    "ID": 28,
+    "Device": "Fan",
+    "Action": "off",
+    "Time": "2024-09-02 19:34:00" 
+  },
+  {
+    "ID": 29,
+    "Device": "Air-conditioner",
+    "Action": "on",
+    "Time": "2024-09-02 19:35:00" 
+  },
+  {
+    "ID": 30,
+    "Device": "Light",
+    "Action": "off",
+    "Time": "2024-09-02 19:36:00" 
+  },
+  {
+    "ID": 31,
+    "Device": "Fan",
+    "Action": "on",
+    "Time": "2024-09-02 19:37:00" 
+  },
+  {
+    "ID": 32,
+    "Device": "Air-conditioner",
+    "Action": "off",
+    "Time": "2024-09-02 19:38:00" 
+  },
+  {
+    "ID": 33,
+    "Device": "Light",
+    "Action": "on",
+    "Time": "2024-09-02 19:39:00" 
+  }
 ]
