@@ -8,12 +8,19 @@
     list-style: none;
     appearance: none;
 }
+:root{
+    --light-yellow:#FFF9D0;
+    --light-blue:#CAF4FF;
+    --blue:#A0DEFF;
+    --extra-blue:#5AB2FF;
+}
 
 body{
     font-family: "Josefin Sans", sans-serif;
     font-size: 0.9rem;
     user-select: none;
-    background-color:#92e9da ;
+    background-color:#d5f7f2 ;
+    min-height: 100vh;
 
 }
 .navbar{
@@ -24,7 +31,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     height: 100px;
-    background-color: bisque;
+    background-color: var(--extra-blue);
 }
 .ds{
     font-size: 25px;
@@ -40,8 +47,8 @@ body{
     float: left;
 }
 .navbar ul li:hover{
-    color: #f97676;
-    background-color: #92e9da;
+    color: var(--light-yellow);
+    background-color: var(--blue);
 }
 .profile{
     margin-left: auto;
@@ -63,20 +70,34 @@ h1{
 }
 
 table {
-  width: 100%; /* Điều chỉnh chiều rộng bảng nếu cần */
-  border-collapse: collapse; /* Gộp các đường viền lại */
-  margin-top: 20px; /* Khoảng cách từ bảng đến phần tử phía trên */
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th, td {
-  padding: 10px; /* Khoảng cách giữa nội dung và đường viền */
-  text-align: left; /* Căn trái nội dung trong ô */
-  border: 1px solid #ddd; /* Đường viền cho các ô */
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    cursor: pointer;
 }
 
-th {
-  background-color: #f2f2f2; /* Màu nền cho ô tiêu đề */
-  font-weight: bold; /* In đậm chữ trong ô tiêu đề */
+th.sort-asc::after {
+    content: " ▲";
+}
+
+th.sort-desc::after {
+    content: " ▼";
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
 }
 
 tr:nth-child(even) {

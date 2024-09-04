@@ -18,7 +18,7 @@ function createTableRow(item) {
 
 function renderTable(data, rowsToShow) {
     tableBody.innerHTML = '';
-    const rows = rowsToShow === 'all' ? data : data.slice(0, rowsToShow);
+    const rows = data.slice(0, rowsToShow);
     rows.forEach(item => {
         createTableRow(item);
     });

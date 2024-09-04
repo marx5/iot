@@ -56,6 +56,7 @@ body{
     width: 30px;
     height: 30px;
 }
+
 .dashboard{
     margin: 0 auto;
     width: 1000px;
@@ -114,6 +115,11 @@ body{
     margin: 10px;
     margin:left auto;
     background-color: var(--light-blue);
+}
+#canvas{
+    justify-items: center;
+    width: 600px;
+    height: 400px;
 }
 .control{
     padding: 10px;
